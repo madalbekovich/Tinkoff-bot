@@ -16,6 +16,7 @@ def message_handler(message):
     except Exception as e:
         logger.error(f"Error while handling message from user {message.from_user.id}: {str(e)}")
         bot.reply_to(message, "Произошла ошибка. Попробуйте позже.")
+        ## TODO: 
 
 if __name__ == '__main__':
     logger.info('Bot started.')
